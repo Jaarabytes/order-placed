@@ -1,0 +1,57 @@
+#time{
+    background-color:darkslategray;
+}
+.white-icon{
+    color:white;
+}
+main{
+    background-color: rgb(22, 39, 56);
+    padding:20px 40px;
+    width:clamp(300px, 38%, 39%);
+    margin-inline:auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: moveOpacityAnimation 3s forwards;
+}
+*{
+    color:rgb(214, 214, 214);
+    font-size:clamp(10px, 16px, 23px)
+}
+#details, #mushrooms{
+    background-color: rgb(51, 63, 75);
+    padding:10px 20px;
+}
+#mushrooms{
+    margin-top:30px;
+}
+#last{
+    margin-top:20px;
+}
+i{
+    margin-right: 10px;
+}
+#order{
+    color:rgb(10, 211, 117);
+    background-color: rgb(18, 73, 55);
+    border:1px solid rgb(10, 211, 117);
+    border-radius:16px;
+    width:fit-content
+}
+  @keyframes moveOpacityAnimation {
+    0% {
+      top: 0;
+      opacity: 0;
+    }
+    50% {
+      top: 15%;
+      opacity: 0.5;
+    }
+    100% {
+      top: 15%;
+      opacity: 1;
+    }
+  }
+  
